@@ -1,0 +1,14 @@
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/PenyediaSewa.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/service/KendaraanService.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/User.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/repository/KendaraanRepository.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/Admin.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/Mobil.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/controller/UserController.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/Penyewa.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/controller/KendaraanController.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/RentalKendaraanApplication.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/repository/UserRepository.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/Kendaraan.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/model/Motor.java
+/mnt/e/projects/pbo_final/backend/src/main/java/com/rental/service/UserService.java

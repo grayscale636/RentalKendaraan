@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Rental Kendaraan</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 p-4 text-white">
+        <h1 class="text-2xl">Rental Kendaraan</h1>
+    </header>
+    <main class="p-4">
+        <h2 class="text-xl">Selamat datang di aplikasi rental kendaraan!</h2>
+        <div class="mt-4">
+            <h3 class="text-lg">Daftar Kendaraan</h3>
+            <ul id="kendaraan-list" class="list-disc pl-5">
+                <!-- Daftar kendaraan akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </main>
+    <script>
+        // Fetch kendaraan dari backend
+        fetch('http://localhost:8080/kendaraan') // Pastikan URL ini sesuai dengan backend Anda
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const list = document.getElementById('kendaraan-list');
+                data.forEach(kendaraan => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${kendaraan.merek} - ${kendaraan.tipe}`;
+                    list.appendChild(listItem);
+                });
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                const list = document.getElementById('kendaraan-list');
+                list.innerHTML = '<li class="text-red-500">Gagal memuat data kendaraan.</li>';
+            });
+    </script>
+</body>
+</html>
