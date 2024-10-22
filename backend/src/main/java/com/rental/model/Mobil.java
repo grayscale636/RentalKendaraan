@@ -5,8 +5,8 @@ import javax.persistence.*;
 @Entity
 @DiscriminatorValue("mobil")
 public class Mobil extends Kendaraan {
-    private int jumlahPintu; // Jumlah pintu
-    private boolean adaRemCakram; // Apakah ada rem cakram
+    private int jumlahPintu;
+    private boolean adaRemCakram;
 
     // Getter dan Setter
     public int getJumlahPintu() {

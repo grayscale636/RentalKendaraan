@@ -15,13 +15,12 @@
         <div class="mt-4">
             <h3 class="text-lg">Daftar Kendaraan</h3>
             <ul id="kendaraan-list" class="list-disc pl-5">
-                <!-- Daftar kendaraan akan ditampilkan di sini -->
             </ul>
         </div>
     </main>
     <script>
         // Fetch kendaraan dari backend
-        fetch('http://localhost:8080/kendaraan') // Pastikan URL ini sesuai dengan backend Anda
+        fetch('http://localhost:8080/kendaraan')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);

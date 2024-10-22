@@ -6,13 +6,13 @@ import javax.persistence.Id;
 @Entity
 public abstract class User {
     @Id
-    private String id; // Pastikan ini adalah kunci utama
+    private String id;
     private String nama;
     private String email;
 
     // Getter dan Setter
     public String getId() {
-        return id; // Tipe pengembalian adalah String
+        return id; 
     }
 
     public void setId(String id) {

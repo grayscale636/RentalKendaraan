@@ -5,5 +5,5 @@ import com.rental.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, String> {
-    // Tambahkan query khusus jika diperlukan
+    // func
 }

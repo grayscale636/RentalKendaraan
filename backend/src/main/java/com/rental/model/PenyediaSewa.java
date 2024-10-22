@@ -6,9 +6,9 @@ import javax.persistence.Id;
 @Entity
 public class PenyediaSewa {
     @Id
-    private Long id; // ID penyedia sewa
-    private String nama; // Nama penyedia sewa
-    private String alamat; // Alamat penyedia sewa
+    private Long id;
+    private String nama;
+    private String alamat;
     private String kendaraan;
 
     // Getter dan Setter

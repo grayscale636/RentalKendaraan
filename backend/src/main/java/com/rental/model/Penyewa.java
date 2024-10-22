@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 
 @Entity
 public class Penyewa extends User {
-    // Tidak perlu mendeklarasikan id lagi, karena sudah ada di User
     private String alamat;
     private String nomorTelepon;
 
@@ -15,7 +14,7 @@ public class Penyewa extends User {
     // Getter dan Setter
     @Override
     public String getId() {
-        return super.getId(); // Menggunakan getId() dari User
+        return super.getId(); 
     }
 
     public String getAlamat() {

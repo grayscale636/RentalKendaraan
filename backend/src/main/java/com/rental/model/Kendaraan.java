@@ -7,9 +7,9 @@ import javax.persistence.*;
 @DiscriminatorColumn(name = "dtype")
 public class Kendaraan {
     @Id
-    private String id; // ID kendaraan
-    private String merek; // Merek kendaraan
-    private String tipe; // Tipe kendaraan
+    private String id; 
+    private String merek; 
+    private String tipe; 
 
     // Getter dan Setter
     public String getId() {

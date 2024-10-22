@@ -6,9 +6,9 @@ import javax.persistence.Id;
 @Entity
 public class Admin {
     @Id
-    private Long id; // ID admin
-    private String email; // Email admin
-    private String nama; // Nama admin
+    private Long id; 
+    private String email; 
+    private String nama;
 
     // Getter dan Setter
     public Long getId() {
